@@ -26,5 +26,9 @@ https://chromedriver.chromium.org/downloads
 
 6. Extract chromedriver.exe di C:\webdriver\chromedriver_win32
 
-5.	Open “auto-KRS.ipynb” via Jupyter Notebook
+7.	Open “auto-KRS.ipynb” via Jupyter Notebook
+![image](https://user-images.githubusercontent.com/76799314/152308046-eb914c31-b3eb-43b9-8be1-698603a41abf.png)
 
+
+
+https://user-images.githubusercontent.com/76799314/152308899-59877bf4-0a98-47e8-bf44-636cc5095c20.mp4
