@@ -6,7 +6,7 @@
  
  ![image](https://user-images.githubusercontent.com/76799314/152307021-446391f9-4eae-4d0c-aa3b-ac24de831c57.png)
  
-3.	Install beberapa library
+3.	Install beberapa library:
 pip install selenium;
 pip install opencv-python;
 pip install times;
