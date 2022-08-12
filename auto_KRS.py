@@ -1,14 +1,4 @@
 #author Defit Tri H.
-
-!pip install selenium
-!apt-get update # to update ubuntu to correctly run apt install
-!apt install chromium-chromedriver
-!cp /usr/lib/chromium-browser/chromedriver /usr/bin
-
-!sudo apt install tesseract-ocr
-!pip install pytesseract
-!pip install Pillow==9.1.1
-
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 # from selenium.webdriver.chrome.options import Options
