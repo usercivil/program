@@ -1,8 +1,8 @@
 #author Defit Tri H.
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-# from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.edge.options import Options
+from selenium.webdriver.chrome.options import Options
+# from selenium.webdriver.edge.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -16,15 +16,15 @@ import matplotlib.pyplot as plt
 
 class auto_KRS():
   def __init__(self):
-    sys.path.insert(0,'/usr/lib/chromium-browser/chromedriver')
+    # sys.path.insert(0,'/usr/lib/chromium-browser/chromedriver')
 
-    chrome_options = webdriver.ChromeOptions()
+    chrome_options = Options()
     chrome_options.add_argument("--headless")
     # chrome_options.headless = False
     # chrome_options.add_argument("start-maximized")
     chrome_options.add_argument('--no-sandbox')
 
-    self.driver = webdriver.Chrome('/usr/lib/chromium-browser/chromedriver', options=chrome_options)
+    self.driver = webdriver.Chrome('chromedriver', options=chrome_options)
 
     try:
       self.driver.get('https://simaster.ugm.ac.id/ugmfw/signin_simaster/signin_proses')
@@ -33,6 +33,8 @@ class auto_KRS():
     except:
       print('failed to open chrome browser')
 
+  def coba(self):
+    self.driver.save_screenshot('image.png')
   def login(self, username, password):  
     username_box = self.driver.find_element("xpath", '//*[@id="username"]')
     username_box.send_keys(username)
