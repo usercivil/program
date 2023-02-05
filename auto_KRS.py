@@ -148,7 +148,7 @@ class auto_KRS():
     except:
         print('')
 
-  def auto_KRS(self, matkul_kelas):
+  def war_KRS(self, matkul_kelas):
     kode_prodi = self.driver.find_element("xpath",'/html/body/div[6]/div[2]/div[2]/form/div/div[2]/div/div[4]/table/tbody/tr[2]/td[2]/div')
     kode_prodi = kode_prodi.get_attribute("id")[0]
     print('kode prodi: ', kode_prodi)
