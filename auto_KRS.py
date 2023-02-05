@@ -161,7 +161,7 @@ class auto_KRS():
             
             try:
                 self.driver.execute_script("arguments[0].click();", WebdriverWait(self.driver, 20).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="{}_{}"]/table[1]/tbody[1]/tr[{}]/td[1]/input[1]'.format(kode_prodi, matkul, kelas)))))
-                print("klik_matkul)
+                print("klik_matkul")
                 self.driver.save_screenshot('klik_matkul.png')
                 time.sleep(1)
                 self.captcha()
