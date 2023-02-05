@@ -40,5 +40,5 @@ pip3 install selenium &> /dev/null
 sudo apt install tesseract-ocr &> /dev/null
 pip install pytesseract &> /dev/null
 pip install Pillow==9.1.1 &> /dev/null
-git clone https://github.com/defittri01/auto-KRS.git &> /dev/null
+# git clone https://github.com/defittri01/auto-KRS.git &> /dev/null
 # 
