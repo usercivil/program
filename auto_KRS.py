@@ -59,6 +59,7 @@ class auto_KRS():
 
     captcha_box = self.driver.find_element("xpath", '//*[@name="captcha"]')
     captcha_box.send_keys(captcha)
+    self.driver.save_screenshot('klik_captcha.png')
 
     button = self.driver.find_element("xpath", '//*[@type="submit"]')
     button.click()
@@ -159,6 +160,7 @@ class auto_KRS():
             
             try:
                 self.driver.execute_script("arguments[0].click();", WebdriverWait(self.driver, 20).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="{}_{}"]/table[1]/tbody[1]/tr[{}]/td[1]/input[1]'.format(kode_prodi, matkul, kelas)))))
+                self.driver.save_screenshot('klik_captcha.png')
                 time.sleep(1)
                 self.captcha()
 
