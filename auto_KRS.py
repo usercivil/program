@@ -130,8 +130,8 @@ class auto_KRS():
     #     capt_form = self.driver.find_element_by_xpath('//*[@id="grid-input-2"]')
         capt_form = self.driver.find_element("xpath", '//*[@id="grid-input-2"]')
         capt_form.send_keys(capt_num)
-        print("klik_captcha.png")
-        self.save_screenshot("klik_captcha.png")
+#         print("klik_captcha.png")
+#         self.save_screenshot("klik_captcha.png")
 
         # click submit buttom
     #     submit_but = self.driver.find_element_by_xpath('//*[@id="f_captcha"]/div[2]/div[1]/button[1]')
@@ -161,8 +161,8 @@ class auto_KRS():
             
             try:
                 self.driver.execute_script("arguments[0].click();", WebdriverWait(self.driver, 20).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="{}_{}"]/table/tbody/tr[{}]/td[1]/input'.format(kode_prodi, matkul, kelas)))))
-                print("klik_matkul")
-                self.driver.save_screenshot('klik_matkul.png')
+#                 print("klik_matkul")
+#                 self.driver.save_screenshot('klik_matkul.png')
                 time.sleep(1)
                 self.captcha()
 
