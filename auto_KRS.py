@@ -135,7 +135,7 @@ class auto_KRS():
 
         # click submit buttom
     #     submit_but = self.driver.find_element_by_xpath('//*[@id="f_captcha"]/div[2]/div[1]/button[1]')
-        submit_but = self.driver.find_element("xpath", '//*[@id="f_captcha"]/div[2]/div[1]/button[1]')
+        submit_but = self.driver.find_element("xpath", '//*[@id="f_captcha"]/div[2]/div/button[1]')
         submit_but.click()
 
         time.sleep(1)
